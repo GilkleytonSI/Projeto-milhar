@@ -66,7 +66,7 @@ let paginaAtual = 1;
                     // Adiciona subtítulo
                     const subtitulo = document.createElement('div');
                     subtitulo.classList.add('subtitulo');
-                    subtitulo.innerText = "Não serão Aceitas Bilhetes que estejam Rasurados ou Rasgados\nSorteio Eletrônico Aberto ao Publico";
+                    subtitulo.innerText = "Não serão aceito bilhetes que estejam rasurados ou rasgados.\nSorteio eletrônico aberto ao público";
                     caixinha.appendChild(subtitulo);
         
                     // Adiciona QR Code
