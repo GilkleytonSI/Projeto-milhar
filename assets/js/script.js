@@ -62,6 +62,12 @@ let paginaAtual = 1;
                     numerosDiv.classList.add('numeros');
                     numerosDiv.innerText = numerosTexto; // Exibe os números verticalmente
                     caixinha.appendChild(numerosDiv);
+
+                    // Adiciona número de telefone
+                    const telefoneDiv = document.createElement('div');
+                    telefoneDiv.classList.add('telefone');
+                    telefoneDiv.innerText = "Tel. (99) 99730-9840";
+                    caixinha.appendChild(telefoneDiv);
         
                     // Adiciona subtítulo
                     const subtitulo = document.createElement('div');

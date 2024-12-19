@@ -55,11 +55,10 @@ input, button {
     white-space: nowrap;
 }
 .numeros {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 800;
-    background: url('../img/onca.png') no-repeat center;
+    background: url('../img/onca2.png') no-repeat center;
     background-size: contain; /* Ajusta o tamanho da imagem */
-    padding: 5px;
     border-radius: 5px;
     margin: 5px 0;
     width: 68%;
@@ -67,9 +66,12 @@ input, button {
     color: #000; /* Garante a legibilidade do texto */
     position: relative;
 }
-
-
-
+.telefone {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
 .qr-code {
     position: absolute;
     /* bottom: 10px; */
@@ -111,7 +113,7 @@ input, button {
     }
 
     .numeros {
-        background: url('../img/onca.png') no-repeat center !important;
+        background: url('../img/onca2.png') no-repeat center !important;
         background-size: contain !important;
         -webkit-print-color-adjust: exact; /* Força o navegador a imprimir as cores exatas */
         print-color-adjust: exact;
