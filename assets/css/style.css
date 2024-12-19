@@ -43,27 +43,43 @@ input, button {
     padding-bottom: 5px;
 }
 .caixinha::before {
-    content: "Entre Amigos";
+    content: "Bilhete dos Amigos";
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     background: #fff;
     padding: 2px 5px;
+    white-space: nowrap;
 }
+.numeros {
+    font-size: 15px;
+    font-weight: 800;
+    background: url('../img/onca.png') no-repeat center;
+    background-size: contain; /* Ajusta o tamanho da imagem */
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 68%;
+    text-align: center;
+    color: #000; /* Garante a legibilidade do texto */
+    position: relative;
+}
+
+
 
 .qr-code {
     position: absolute;
-    bottom: 5px;
+    /* bottom: 10px; */
     right: 5px;
     width: 30px;
     height: 30px;
 }
 .subtitulo {
     margin-top: 5px;
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
     white-space: pre-line;
     font-weight: normal;
@@ -92,5 +108,12 @@ input, button {
     }
     .caixinhas {
         grid-template-columns: repeat(4, 1fr); /* Mantém o layout 4x4 */
+    }
+
+    .numeros {
+        background: url('../img/onca.png') no-repeat center !important;
+        background-size: contain !important;
+        -webkit-print-color-adjust: exact; /* Força o navegador a imprimir as cores exatas */
+        print-color-adjust: exact;
     }
 }
