@@ -66,13 +66,13 @@ let paginaAtual = 1;
                     // Adiciona número de telefone
                     const telefoneDiv = document.createElement('div');
                     telefoneDiv.classList.add('telefone');
-                    telefoneDiv.innerText = "Tel. (99) 99730-9840";
+                    telefoneDiv.innerText = "Tel. (49) 99730-9840";
                     caixinha.appendChild(telefoneDiv);
         
                     // Adiciona subtítulo
                     const subtitulo = document.createElement('div');
                     subtitulo.classList.add('subtitulo');
-                    subtitulo.innerText = "Não serão aceito bilhetes que estejam rasurados ou rasgados.\nSorteio eletrônico aberto ao público";
+                    subtitulo.innerText = "Não serão aceito bilhetes que estejam rasurados ou rasgados.\n Bilhete válido por 12h";
                     caixinha.appendChild(subtitulo);
         
                     // Adiciona QR Code
