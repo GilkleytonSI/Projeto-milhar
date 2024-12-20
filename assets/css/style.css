@@ -41,25 +41,27 @@ input, button {
     text-align: center;
     position: relative;
     padding-bottom: 5px;
+    background: linear-gradient(to bottom, #fae0e6, #dd8944); /* Fundo gradiente */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
-.caixinha::before {
+.caixinha::before{
     content: "Bilhete dos Amigos";
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
-    background: #fff;
+    /* background: #fff; */
     padding: 2px 5px;
     white-space: nowrap;
 }
 .numeros {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 800;
-    background: url('../img/onca.png') no-repeat center;
+    background: url('../img/onca2.png') no-repeat center;
     background-size: contain; /* Ajusta o tamanho da imagem */
-    padding: 5px;
     border-radius: 5px;
     margin: 5px 0;
     width: 68%;
@@ -67,9 +69,12 @@ input, button {
     color: #000; /* Garante a legibilidade do texto */
     position: relative;
 }
-
-
-
+.telefone {
+    font-size: 9px;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+}
 .qr-code {
     position: absolute;
     /* bottom: 10px; */
@@ -82,7 +87,8 @@ input, button {
     font-size: 9px;
     text-align: center;
     white-space: pre-line;
-    font-weight: normal;
+    font-weight: 700;
+    color: #610d0d;
 }
 .pagination {
     margin: 20px;
@@ -109,9 +115,15 @@ input, button {
     .caixinhas {
         grid-template-columns: repeat(4, 1fr); /* Mantém o layout 4x4 */
     }
+    .caixinha{
+        background: linear-gradient(to bottom, #fae0e6, #dd8944); /* Fundo gradiente */
+        -webkit-print-color-adjust: exact; /* Garante que as cores sejam exibidas na impressão */
+        border-radius: 8px; /* Bordas arredondadas */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    }
 
     .numeros {
-        background: url('../img/onca.png') no-repeat center !important;
+        background: url('../img/onca2.png') no-repeat center !important;
         background-size: contain !important;
         -webkit-print-color-adjust: exact; /* Força o navegador a imprimir as cores exatas */
         print-color-adjust: exact;
